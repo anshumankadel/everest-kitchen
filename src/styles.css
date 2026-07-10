@@ -1,0 +1,301 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Everest Kitchen — Design System
+ * Deep Navy, Cream, Saffron, Terracotta, Charcoal
+ * Headings: Oswald (bold condensed), Body: Inter
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --font-display: "Oswald", "Bebas Neue", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-script: "Caveat", cursive;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-cream: var(--cream);
+  --color-saffron: var(--saffron);
+  --color-saffron-glow: var(--saffron-glow);
+  --color-terracotta: var(--terracotta);
+  --color-charcoal: var(--charcoal);
+  --color-ember: var(--ember);
+  --color-marigold: var(--marigold);
+  --color-chili: var(--chili);
+  --color-chili-deep: var(--chili-deep);
+  --color-chalkboard: var(--chalkboard);
+  --color-sunny: var(--sunny);
+  --color-sunny-bright: var(--sunny-bright);
+  --color-paprika: var(--paprika);
+  --color-herb: var(--herb);
+
+  --shadow-warm: 0 20px 50px -20px color-mix(in oklab, var(--terracotta) 35%, transparent);
+  --shadow-card: 0 10px 30px -12px color-mix(in oklab, var(--navy) 25%, transparent);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Brand tokens */
+  --navy: oklch(0.27 0.035 40);          /* warm espresso ink — was cool blue, retuned to stop fighting the red/orange palette */
+  --navy-deep: oklch(0.17 0.03 40);      /* near-black espresso, warm dark anchor for header/footer */
+  --cream: oklch(0.97 0.012 85);         /* #F8F5EF */
+  --saffron: oklch(0.72 0.16 65);        /* #D4942A */
+  --saffron-glow: oklch(0.82 0.15 75);
+  --terracotta: oklch(0.6 0.17 35);      /* #C0562D */
+  --charcoal: oklch(0.22 0 0);           /* #1E1E1E */
+  --ember: oklch(0.65 0.2 40);
+  --marigold: oklch(0.78 0.17 70);       /* bright warm marigold, brighter than saffron */
+  --chili: oklch(0.55 0.22 25);          /* appetite-stimulating red */
+  --chili-deep: oklch(0.3 0.15 20);      /* deep red-maroon, dark anchor in place of navy */
+  --chalkboard: oklch(0.2 0.025 165);    /* deep slate-green, like a real chalkboard menu */
+  --sunny: oklch(0.80 0.17 78);          /* rich golden mustard — bold food-yellow, full-section worthy */
+  --sunny-bright: oklch(0.91 0.18 90);   /* lighter vivid yellow for small accents on dark backgrounds */
+  --paprika: oklch(0.69 0.22 50);        /* punchy paprika orange, warmer and bolder than ember */
+  --herb: oklch(0.50 0.16 148);          /* fresh herb green — cilantro/mint, price-tag green */
+
+  /* Semantic mapping */
+  --background: var(--cream);
+  --foreground: var(--charcoal);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--charcoal);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--charcoal);
+  --primary: var(--navy);
+  --primary-foreground: var(--cream);
+  --secondary: oklch(0.93 0.015 85);
+  --secondary-foreground: var(--navy);
+  --muted: oklch(0.94 0.012 85);
+  --muted-foreground: oklch(0.45 0.02 60);
+  --accent: var(--saffron);
+  --accent-foreground: var(--navy);
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: var(--cream);
+  --border: oklch(0.88 0.015 80);
+  --input: oklch(0.9 0.012 80);
+  --ring: var(--saffron);
+}
+
+.dark {
+  --background: var(--navy-deep);
+  --foreground: var(--cream);
+  --card: var(--navy);
+  --card-foreground: var(--cream);
+  --primary: var(--saffron);
+  --primary-foreground: var(--navy);
+  --border: oklch(1 0 0 / 12%);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+  ::selection {
+    background-color: var(--saffron);
+    color: var(--navy);
+  }
+  ::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--cream);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--navy);
+    border-radius: 999px;
+    border: 2px solid var(--cream);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--saffron);
+  }
+  html {
+    scrollbar-color: var(--navy) var(--cream);
+  }
+}
+
+@utility font-display { font-family: var(--font-display); }
+@utility font-script { font-family: var(--font-script); }
+@utility font-stencil {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@utility section { padding-block: clamp(4rem, 8vw, 7rem); }
+@utility container-x { padding-inline: clamp(1.25rem, 4vw, 2.5rem); }
+
+@utility text-balance { text-wrap: balance; }
+
+@utility fade-in-up {
+  animation: fadeInUp 0.8s ease both;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@utility grain-overlay {
+  position: relative;
+}
+@utility grain-texture {
+  position: relative;
+  isolation: isolate;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@utility text-gold-shimmer {
+  background-image: linear-gradient(
+    100deg,
+    var(--chili) 0%,
+    var(--ember) 20%,
+    var(--sunny) 40%,
+    var(--marigold) 60%,
+    var(--ember) 80%,
+    var(--chili) 100%
+  );
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: -220% center; }
+}
+
+@utility marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@utility animate-flicker {
+  animation: flicker 3.2s ease-in-out infinite;
+}
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.82; }
+}
+
+@utility paper-texture {
+  position: relative;
+  isolation: isolate;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.97  0 0 0 0 0.95  0 0 0 0 0.90  0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+  }
+}
+
+@utility wobble-in {
+  animation: wobbleIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+@keyframes wobbleIn {
+  from { opacity: 0; transform: scale(0.6) rotate(-15deg); }
+  to { opacity: 1; transform: scale(1) rotate(-8deg); }
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+@utility chalk-texture {
+  position: relative;
+  isolation: isolate;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.12;
+    mix-blend-mode: screen;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E");
+  }
+}
+
+@utility polaroid {
+  background: var(--cream);
+  padding: 0.6rem 0.6rem 1.6rem;
+  box-shadow: 0 14px 28px -10px rgb(0 0 0 / 0.35);
+}
+
+@utility mural-pattern {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-repeat: repeat;
+    background-size: 150px 150px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cpath d='M15 120 L40 70 L65 120 Z' fill='none' stroke='%23F8F5EF' stroke-width='3' opacity='0.9'/%3E%3Ccircle cx='112' cy='38' r='7' fill='%23F5D300'/%3E%3Ccircle cx='127' cy='48' r='7' fill='%23F5D300'/%3E%3Ccircle cx='119' cy='60' r='7' fill='%23F5D300'/%3E%3Ccircle cx='102' cy='56' r='7' fill='%23F5D300'/%3E%3Ccircle cx='115' cy='50' r='5' fill='%23F8F5EF'/%3E%3Cpath d='M38 105 q14 -24 28 -5 q9 14 -5 19 q-14 5 -23 -14 Z' fill='none' stroke='%23C0562D' stroke-width='2.5' opacity='0.9'/%3E%3Ccircle cx='135' cy='115' r='4' fill='%23F8F5EF'/%3E%3Ccircle cx='20' cy='35' r='4' fill='%23F5D300'/%3E%3C/svg%3E");
+  }
+}
