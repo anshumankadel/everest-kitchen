@@ -47,6 +47,23 @@ import friedChickenMomoImg from "@/assets/Fried Chicken Momo.jpg";
 import chiliChickenMomoImg from "@/assets/Chili Chicken Momo.jpg";
 
 import paneerTikkaNaanWrapImg from "@/assets/Paneer Tikka Naan Wrap.jpg";
+import chickenSekuwaNaanWrapImg from "@/assets/Chicken Sekuwa Naan Wrap.jpg";
+import veggieGrillBoardImg from "@/assets/Veggie Grill Board.jpg";
+import butterChickenImg from "@/assets/Butter Chicken.jpg";
+import coconutCurryImg from "@/assets/Coconut Curry.jpg";
+import tandooriGrillLambImg from "@/assets/Tandoori Grill Lamb.jpg";
+import lambChopImg from "@/assets/Lamb Chop.jpg";
+import jholMoMoImg from "@/assets/Jhol Mo;Mo.jpg";
+import tandooriMoMoImg from "@/assets/Tandoori Mo;Mo.jpg";
+import chickenBiryaniImg from "@/assets/Chicken Biryani.jpg";
+import lambBiryaniImg from "@/assets/Lamb Biryani.jpg";
+import goatBiryaniImg from "@/assets/Goat Biryani.jpg";
+import shrimpBiryaniImg from "@/assets/Shrimp Biryani.jpg";
+import vegBiryaniImg from "@/assets/Veg Biryani.jpg";
+import saagCurryImg from "@/assets/Saag Curry.jpg";
+import vegChowmeinImg from "@/assets/Veg Chowmein.jpg";
+import vegFriedRiceImg from "@/assets/Veg Fried Rice.jpg";
+import choleBhatureImg from "@/assets/chole bhature.jpg";
 
 import aamasMasalaChaiImg from "@/assets/Aama's Masala Chai.jpg";
 import himalayanIcedChaiImg from "@/assets/Himalayan Iced Chai.jpg";
@@ -94,14 +111,14 @@ export const menu: MenuCategory[] = [
     tagline: "Hot from the tandoor • smoky from the grill. Served with pickled onions, cucumber salad, mint chutney, and your choice of plain, butter, or garlic naan.",
     icon: "flame",
     dishes: [
-      { name: "Chicken Sekuwa", desc: "Nepali-style charcoal-grilled chicken with garlic, ginger, cumin, chili, mustard oil, house spices.", price: "$21", badge: "Most Popular", image: chickenSekuwaImg },
-      { name: "Tandoori Chicken", desc: "Yogurt-marinated half chicken, tandoor-charred, mint chutney, lemon.", price: "$21", image: dishTandooriChicken },
-      { name: "Chicken Tikka Kebab", desc: "Boneless chicken with roasted peppers and onion, mint chutney, cucumber salad.", price: "$22", image: chickenTikkaKababImg },
-      { name: "Malai Chicken Kebab", desc: "Creamy, mildly spiced chicken with cheese, cardamom, garlic, herbs.", price: "$22", badge: "Chef's Pick", image: dishMalaiKabab },
-      { name: "Lamb Seekh Kebab", desc: "Charcoal-grilled minced lamb skewers with herbs, green chili, garlic, warm spices.", price: "$25", image: dishLambSeekh },
-      { name: "Tandoori Shrimp", desc: "Spiced shrimp grilled over high heat with lemon-garlic sauce and charred vegetables.", price: "$27", image: dishTandooriShrimp },
-      { name: "Tandoori Fish Tikka", desc: "Seasonal white fish with turmeric, yogurt, ginger, lemon, mint chutney.", price: "$25", image: tandooriFishTikkaImg },
-      { name: "Paneer Tikka Skewers", desc: "Paneer, peppers, onions, tomato, tikka masala, lime.", price: "$20", image: paneerTikkaSkewersImg },
+      { name: "Chicken Sekuwa", desc: "Nepali-style charcoal-grilled chicken with garlic, ginger, cumin, chili, mustard oil, house spices.", price: "$19.99", badge: "Most Popular", image: chickenSekuwaImg },
+      { name: "Tandoori Chicken", desc: "Yogurt-marinated half chicken, tandoor-charred, mint chutney, lemon.", price: "$19.99", image: dishTandooriChicken },
+      { name: "Chicken Tikka Kebab", desc: "Boneless chicken with roasted peppers and onion, mint chutney, cucumber salad.", price: "$20.99", image: chickenTikkaKababImg },
+      { name: "Malai Chicken Kebab", desc: "Creamy, mildly spiced chicken with cheese, cardamom, garlic, herbs.", price: "$20.99", badge: "Chef's Pick", image: dishMalaiKabab },
+      { name: "Lamb Seekh Kebab", desc: "Charcoal-grilled minced lamb skewers with herbs, green chili, garlic, warm spices.", price: "$23.99", image: dishLambSeekh },
+      { name: "Tandoori Grilled Lamb (4 pc)", desc: "Tandoor-spiced lamb chops marinated with garlic, ginger, yogurt, and house spices.", price: "$32.99", image: tandooriGrillLambImg },
+      { name: "Tandoori Shrimp", desc: "Spiced shrimp grilled over high heat with lemon-garlic sauce and charred vegetables.", price: "$25.99", image: dishTandooriShrimp },
+      { name: "Paneer Tikka Skewers", desc: "Paneer, peppers, onions, tomato, tikka masala, lime.", price: "$18.99", image: paneerTikkaSkewersImg },
     ],
   },
 
@@ -112,10 +129,10 @@ export const menu: MenuCategory[] = [
     tagline: "For the table · for the hungry · for people who cannot decide.",
     icon: "utensils",
     dishes: [
-      { name: "Kathmandu Mixed Grill", desc: "Tandoori chicken, chicken tikka, malai chicken kebab, lamb seekh kebab, garlic naan, masala fries, cucumber salad, pickled onions, three sauces.", price: "$38", image: mixedGrillComboImg },
-      { name: "Himalayan Grill Feast", desc: "Tandoori chicken, chicken tikka, malai chicken kebab, lamb seekh kebab, tandoori shrimp, naan basket, masala fries, side salad, achar, three sauces.", price: "$66", badge: "House Special", image: familyBbqFeastImg },
-      { name: "Sekuwa & Naan Board", desc: "Charcoal chicken sekuwa, garlic naan, Nepali achar, pickled onions, mint chutney, cucumber salad, chili-garlic sauce.", price: "$29", badge: "Chef's Pick", image: sekuwaNaanBoardImg },
-      { name: "Veggie Grill Board", desc: "Paneer tikka, tandoori cauliflower, masala fries, naan basket, achar, chutneys, cucumber salad.", price: "$27", image: dishBbqPlatter },
+      { name: "Tandoori Mixed Grill", desc: "4 skewers: chicken tikka, chili chicken, seekh, lamb seekh, chicken tandoori. Served with naan, salad & achar.", price: "$37.99", image: mixedGrillComboImg },
+      { name: "Everest Family Feast", desc: "Feast for 4: full tandoori chicken, chicken tikka, seekh kebab, lamb kebabs, biryani, sekuwa, naan, raita, and salad.", price: "$49.99", image: familyBbqFeastImg },
+      { name: "Sekuwa & Naan Board", desc: "Smoky chicken sekuwa, paneer tikka, yogurt achar, pickled onions, mint chutney, and crispy sev.", price: "$28.99", badge: "Chef's Pick", image: sekuwaNaanBoardImg },
+      { name: "Veggie Grill Board", desc: "Paneer tikka, mushrooms, tandoori broccoli, grilled veggies, naan, chutney, and cucumber salad.", price: "$26.99", image: veggieGrillBoardImg },
     ],
   },
 
@@ -123,28 +140,14 @@ export const menu: MenuCategory[] = [
   {
     id: "naan-wraps",
     title: "Naan Wraps",
-    tagline: "Street-food handhelds — served with masala fries or side salad.",
+    tagline: "Street-food handhelds — served with masala fries.",
     icon: "sandwich",
     dishes: [
-      { name: "Tandoori Tikka Naan Wrap", desc: "Tandoori chicken tikka, lettuce, pickled onions, mint chutney, tandoori mayo, cilantro in warm naan.", price: "$18", badge: "Most Popular", image: dishNaanWrap },
-      { name: "Chicken Sekuwa Naan Wrap", desc: "Smoky chicken sekuwa, Nepali achar, cucumber, pickled onions, mint chutney, chili-garlic sauce, crispy sev.", price: "$18" },
-      { name: "Lamb Seekh Naan Wrap", desc: "Lamb seekh kebab, charred onions, pickled onion, garlic sauce, mint chutney, chili-lime slaw.", price: "$20", image: lambSeekhNaanWrapImg },
-      { name: "Tandoori Shrimp Naan Wrap", desc: "Charred shrimp, crunchy cabbage, pickled onion, lemon-garlic sauce, mint chutney, cilantro.", price: "$20", image: tandooriShrimpNaanWrapImg },
-      { name: "Paneer Tikka Naan Wrap", desc: "Grilled paneer, peppers, onion, mint chutney, tamarind, crunchy slaw, cilantro.", price: "$17", image: paneerTikkaNaanWrapImg },
-    ],
-  },
-
-  // ─── Grill Boxes ─────────────────────────────────────────────────────────
-  {
-    id: "grill-boxes",
-    title: "Grill Boxes",
-    tagline: "A complete meal, street-food style. Each box includes garlic naan, masala fries, pickled onions, cucumber salad, and one sauce.",
-    icon: "utensils",
-    dishes: [
-      { name: "Chicken Grill Box", desc: "Choose tandoori chicken, chicken tikka, chicken sekuwa, or malai chicken kebab.", price: "$23", badge: "Most Popular", image: chickenGrillBoxImg },
-      { name: "Lamb Grill Box", desc: "Lamb seekh kebab with garlic naan, masala fries, pickled onions, mint chutney.", price: "$26", image: lambGrillBoxImg },
-      { name: "Seafood Grill Box", desc: "Choose tandoor shrimp or fish tikka.", price: "$27", image: seafoodGrillBoxImg },
-      { name: "Paneer Grill Box", desc: "Paneer tikka, grilled vegetables, garlic naan, masala fries, pickled onions, mint chutney.", price: "$22", image: paneerGrillBoxImg },
+      { name: "Tandoori Tikka Naan Wrap", desc: "Tandoori chicken tikka, lettuce, pickled onions, mint chutney, tandoori mayo, cilantro in warm naan.", price: "$15.99", badge: "Most Popular", image: dishNaanWrap },
+      { name: "Chicken Sekuwa Naan Wrap", desc: "Smoky chicken sekuwa, Nepali achar, pickled onions, mint chutney, chili-garlic sauce, and crispy sev.", price: "$15.99", image: chickenSekuwaNaanWrapImg },
+      { name: "Paneer Tikka Naan Wrap", desc: "Grilled paneer, peppers, onion, mint chutney, tamarind, crunchy slaw, cilantro.", price: "$14.99", image: paneerTikkaNaanWrapImg },
+      { name: "Lamb Seekh Naan Wrap", desc: "Lamb seekh kebab, charred onions, pickled onion, garlic sauce, mint chutney, chili-lime slaw.", price: "$17.99", image: lambSeekhNaanWrapImg },
+      { name: "Tandoori Shrimp Naan Wrap", desc: "Charred shrimp, pickled onion, lemongrass sauce, mint chutney, and cilantro.", price: "$18.99", image: tandooriShrimpNaanWrapImg },
     ],
   },
 
@@ -155,12 +158,14 @@ export const menu: MenuCategory[] = [
     tagline: "Small plates, crispy things, and snackable favorites.",
     icon: "drumstick",
     dishes: [
-      { name: "Masala Street Fries", desc: "Crispy fries, chaat masala, chili, lime, cilantro, tamarind ketchup, garlic sauce.", price: "$11", image: masalaFriesImg },
-      { name: "Everest Loaded Tandoori Fries", desc: "Masala fries, chopped tandoori chicken, pickled onions, cilantro, tandoori mayo, garlic sauce.", price: "$16", badge: "Most Popular", image: tandooriLoadedFriesImg },
-      { name: "Sekuwa Loaded Fries", desc: "Smoky chicken sekuwa, Nepali achar, pickled onions, mint chutney, chili-garlic sauce.", price: "$17", image: sekuwaLoadedFriesImg },
-      { name: "Crispy Paneer Pops", desc: "Crispy paneer tossed with sweet chili, garlic, curry leaves, sesame.", price: "$14", image: crispyPaneerPopsImg },
-      { name: "Chili Chicken Street Bites", desc: "Crispy chicken, bell peppers, onions, ginger, garlic, curry leaves, Indo-Chinese sauce.", price: "$17", badge: "Chef's Pick", image: chiliChickenStreetBitesImg },
-      { name: "Charred Corn Chaat", desc: "Fire-roasted corn, lime, chili, cheese, cilantro, chaat masala, tamarind.", price: "$13", image: charredCornChaatImg },
+      { name: "Everest Loaded Tandoori Fries", desc: "Masala fries, chopped tandoori chicken, pickled onions, cilantro, tandoori mayo, garlic sauce.", price: "$15.99", badge: "Most Popular", image: tandooriLoadedFriesImg },
+      { name: "Sekuwa Loaded Fries", desc: "Smoky chicken sekuwa, Nepali achar, pickled onions, mint chutney, chili-garlic sauce.", price: "$16.99", image: sekuwaLoadedFriesImg },
+      { name: "Crispy Paneer Pops", desc: "Crispy paneer tossed with sweet chili, garlic, curry leaves, sesame.", price: "$13.99", image: crispyPaneerPopsImg },
+      { name: "Chili Chicken Street Bites", desc: "Crispy chicken, bell peppers, onions, ginger, garlic, curry leaves, Indo-Chinese sauce.", price: "$16.99", badge: "Chef's Pick", image: chiliChickenStreetBitesImg },
+      { name: "Chole Bhature", desc: "Fluffy bhature, spiced chickpeas, pickled onions, achar, cilantro.", price: "$13.99", image: choleBhatureImg },
+      { name: "Veg Fried Rice", desc: "Wok-tossed rice with vegetables, soy, scallions, chili, and Everest seasoning. Choice of protein: chicken, shrimp +$4.99.", price: "$14.99", image: vegFriedRiceImg },
+      { name: "Veg Chowmein", desc: "Stir-fried noodles with vegetables, onion, cabbage, peppers, soy, and house spices. Choice of protein: chicken, shrimp +$4.99.", price: "$14.99", image: vegChowmeinImg },
+      { name: "Lamb Chop (3 pc)", desc: "Tandoori-spiced lamb chops grilled over high heat and finished with fresh lemon.", price: "$23.99", image: lambChopImg },
     ],
   },
 
@@ -171,24 +176,26 @@ export const menu: MenuCategory[] = [
     tagline: "Tangy, sweet, spicy, crunchy.",
     icon: "sparkles",
     dishes: [
-      { name: "Pani Puri Party", desc: "Crispy puris, potato, chickpeas, tamarind, mint water, spicy pani.", price: "$14", badge: "Chef's Pick", image: paniPuriPartyImg },
-      { name: "Bhel Puri", desc: "Puffed rice, sev, potato, onion, cilantro, pomegranate, peanuts, chutneys, lime.", price: "$13", image: bhelPuriImg },
-      { name: "Sekuwa Bhel", desc: "Puffed rice, crispy noodles, smoky chicken sekuwa, achar, pickled onion, chili, lime.", price: "$17", badge: "Most Popular", image: sekuwaBhelImg },
-      { name: "Tandoori Chicken Chaat", desc: "Tandoori chicken, crispy papdi, yogurt, tamarind, mint chutney, pickled onions, sev.", price: "$17", image: tandooriChickenChaatImg },
-      { name: "Samosa Chaat", desc: "Crushed vegetable samosas, chickpeas, yogurt, tamarind, mint chutney, onion, cilantro, sev.", price: "$14", image: samosaChaatImg },
+      { name: "Pani Puri Party", desc: "Crispy puris, potato, chickpeas, tamarind, mint water, and spicy pani.", price: "$10.99", badge: "Chef's Pick", image: paniPuriPartyImg },
+      { name: "Bhel Puri", desc: "Puffed rice, sev, potato, onion, cilantro, pomegranate, peanuts, chutneys, lime.", price: "$11.99", image: bhelPuriImg },
+      { name: "Sekuwa Bhel", desc: "Puffed rice, crispy noodles, smoky chicken sekuwa, achar, pickled onion, chili, lime.", price: "$13.99", badge: "Most Popular", image: sekuwaBhelImg },
+      { name: "Tandoori Chicken Chaat", desc: "Chicken, crispy papdi, yogurt, tamarind, mint chutney, pickled onions, and sev.", price: "$12.99", image: tandooriChickenChaatImg },
+      { name: "Samosa Chaat", desc: "Crushed vegetable samosas, chickpeas, yogurt, tamarind, mint chutney, onion, cilantro, and sev.", price: "$10.99", image: samosaChaatImg },
     ],
   },
 
   // ─── Momo ────────────────────────────────────────────────────────────────
   {
     id: "momo",
-    title: "Momo",
-    tagline: "The heart of Nepali street food — served with Everest tomato-sesame achar.",
+    title: "Mo;Mo",
+    tagline: "The heart of Nepali street food — served with home-made tomato chutney.",
     icon: "drumstick",
     dishes: [
-      { name: "Steamed Chicken Momo", desc: "Eight handmade chicken dumplings, steamed to order.", price: "$15", badge: "Most Popular", image: steamedChickenMomoImg },
-      { name: "Fried Chicken Momo", desc: "Eight crisp fried chicken dumplings with achar and chili oil.", price: "$16", image: friedChickenMomoImg },
-      { name: "Chili Chicken Momo", desc: "Fried dumplings tossed with onions, peppers, curry leaves, ginger, garlic, spicy Indo-Chinese sauce.", price: "$17", badge: "Chef's Pick", image: chiliChickenMomoImg },
+      { name: "Steamed Mo;Mo", desc: "Soft Himalayan dumplings stuffed with savory filling, delicately steamed to order.", price: "$12.99", badge: "Most Popular", image: steamedChickenMomoImg },
+      { name: "Fried Mo;Mo", desc: "Dumplings pan-fried until crisp outside with sizzling spicy insides.", price: "$14.99", image: friedChickenMomoImg },
+      { name: "Chili Mo;Mo", desc: "Fried dumplings tossed with onion, bell pepper, garlic, ginger, and bold spicy chili sauce.", price: "$15.99", badge: "Chef's Pick", image: chiliChickenMomoImg },
+      { name: "Jhol Mo;Mo", desc: "Dumplings served in warm roasted tomato-sekuwa jhol with Himalayan spices and herbs.", price: "$14.99", image: jholMoMoImg },
+      { name: "Tandoori Mo;Mo", desc: "Dumplings marinated in tandoori spices and lightly charred, served with house chutney.", price: "$15.99", image: tandooriMoMoImg },
     ],
   },
 
@@ -196,14 +203,32 @@ export const menu: MenuCategory[] = [
   {
     id: "curries",
     title: "Curries",
-    tagline: "Each curry includes steamed basmati rice. Substitute paneer +$0, lamb +$3, or shrimp +$5.",
+    tagline: "Most curries served with basmati rice. Protein choices: vegetable, paneer +$0 · lamb +$3.99 · shrimp +$3.99 · goat +$4.99.",
     icon: "soup",
     dishes: [
-      { name: "Chicken Korma", desc: "Gentle aromatic cashew-yogurt sauce with warm spices.", price: "$21", image: chickenKormaImg },
-      { name: "Chicken Curry", desc: "Home-style chicken curry with tomato, onion, ginger, garlic, toasted spices.", price: "$20", image: indianChickenCurryImg },
-      { name: "Chicken Tikka Masala", desc: "Tandoor-charred chicken tikka in a bold tomato-cream masala sauce.", price: "$22", badge: "Most Popular", image: chickenTikkaMasalaImg },
-      { name: "Chicken Makhani", desc: "Tandoor-charred chicken in a velvety butter-tomato sauce.", price: "$22", badge: "Chef's Pick", image: chickenMakhaniImg },
-      { name: "Dal Makhani", desc: "Slow-simmered black lentils, kidney beans, tomato, butter, warming spices.", price: "$18", image: dalMakhaniImg },
+      { name: "Korma", desc: "A creamy, aromatic cashew-yogurt sauce with warm spices.", price: "$20.99", image: chickenKormaImg },
+      { name: "Curry", desc: "Comforting homestyle curry with tomato, onion, ginger, garlic, and roasted spices.", price: "$19.99", image: indianChickenCurryImg },
+      { name: "Tikka Masala", desc: "A bold tomato-cream masala sauce with tandoor-charred flavor.", price: "$21.99", badge: "Most Popular", image: chickenTikkaMasalaImg },
+      { name: "Makhan", desc: "Velvety butter-tomato sauce with warm spices.", price: "$21.99", badge: "Chef's Pick", image: chickenMakhaniImg },
+      { name: "Butter Chicken", desc: "Soft butter chicken curry with tender chicken and a rich, creamy tomato sauce.", price: "$21.99", image: butterChickenImg },
+      { name: "Coconut Curry", desc: "A coconut-based curry with ginger, garlic, roasted spices, and herbs.", price: "$20.99", image: coconutCurryImg },
+      { name: "Saag Curry", desc: "A green, spinach-based curry with garlic, ginger, and spices.", price: "$20.99", image: saagCurryImg },
+      { name: "Dal Makhan", desc: "Slow-simmered black lentils, kidney beans, tomato, butter, and warm spices.", price: "$17.99", image: dalMakhaniImg },
+    ],
+  },
+
+  // ─── Biryani ─────────────────────────────────────────────────────────────
+  {
+    id: "biryani",
+    title: "Biryani",
+    tagline: "Slow-cooked aromatic rice, $16.99 base. Choice of protein: Veg +$0 · Chicken +$1.00 · Shrimp +$3.00 · Lamb +$4.00 · Goat +$5.00.",
+    icon: "utensils",
+    dishes: [
+      { name: "Chicken Biryani", desc: "", price: "$17.99", badge: "Most Popular", image: chickenBiryaniImg },
+      { name: "Lamb Biryani", desc: "", price: "$20.99", image: lambBiryaniImg },
+      { name: "Goat Biryani", desc: "", price: "$21.99", image: goatBiryaniImg },
+      { name: "Shrimp Biryani", desc: "", price: "$19.99", image: shrimpBiryaniImg },
+      { name: "Veg Biryani", desc: "", price: "$16.99", image: vegBiryaniImg },
     ],
   },
 
@@ -214,13 +239,12 @@ export const menu: MenuCategory[] = [
     tagline: "A bright, spice-forward nonalcoholic drinks list.",
     icon: "sparkles",
     dishes: [
-      { name: "Aama's Masala Chai", desc: "Black tea simmered with cardamom, ginger, cinnamon, cloves, milk.", price: "$5", badge: "Chef's Pick", image: aamasMasalaChaiImg },
-      { name: "Himalayan Iced Chai", desc: "Cold-brewed spiced tea with milk, vanilla, cardamom, cinnamon.", price: "$6", image: himalayanIcedChaiImg },
-      { name: "Mango Lassi", desc: "Mango, yogurt, cardamom, saffron.", price: "$6", badge: "Most Popular", image: mangoLassiImg },
-      { name: "Plain Sweet Lassi", desc: "Classic lightly sweetened yogurt drink.", price: "$5", image: plainSweetLassiImg },
-      { name: "Kathmandu Lemon Soda", desc: "Fresh lemon, black salt, cumin, mint, soda.", price: "$6", image: kathmanduLemonSodaImg },
-      { name: "Spiced Coke Float", desc: "Mexican Coke, vanilla ice cream, chili salt, cardamom.", price: "$7", image: spicedCokeFloatImg },
-      { name: "Fresh Sugarcane Lemonade", desc: "Sugarcane juice, ginger, lemon, mint, black salt.", price: "$7", image: freshSugarcaneLemonadeImg },
+      { name: "Ama's Masala Chai", desc: "Black tea simmered with cardamom, ginger, cinnamon, cloves, and milk.", price: "$4.99", badge: "Chef's Pick", image: aamasMasalaChaiImg },
+      { name: "Himalayan Iced Chai", desc: "Cold-brewed spiced tea with milk, vanilla, cardamom, and cinnamon.", price: "$5.99", image: himalayanIcedChaiImg },
+      { name: "Mango Lassi", desc: "Mango, yogurt, cardamom, and a touch of saffron.", price: "$5.99", badge: "Most Popular", image: mangoLassiImg },
+      { name: "Banana Lassi", desc: "Banana, yogurt, cardamom, and a light touch of sweetness.", price: "$4.99", image: plainSweetLassiImg },
+      { name: "Kathmandu Lemon Soda", desc: "Fresh lemon, black salt, cumin, mint, and soda.", price: "$5.99", image: kathmanduLemonSodaImg },
+      { name: "Fresh Lemonade", desc: "Fresh lemon, ginger, mint, and black salt.", price: "$6.99", image: freshSugarcaneLemonadeImg },
     ],
   },
 
@@ -231,9 +255,9 @@ export const menu: MenuCategory[] = [
     tagline: "A sweet finish with Himalayan comfort.",
     icon: "sparkles",
     dishes: [
-      { name: "Gulab Jamun Skillet", desc: "Warm milk dumplings in rose-cardamom syrup with pistachio and cool yogurt.", price: "$10", badge: "Chef's Pick", image: gulabJamunSkilletImg },
-      { name: "Everest Kulfi Pop", desc: "Frozen mango-cardamom kulfi with a pistachio crumble.", price: "$7", badge: "Most Popular", image: everestKulfiPopImg },
-      { name: "Rice Pudding", desc: "Slow-cooked basmati rice pudding with cardamom, saffron, pistachio.", price: "$9", image: ricePuddingImg },
+      { name: "Gulab Jamun (2 pc)", desc: "Warm milk dumplings in rose-cardamom syrup with pistachios.", price: "$7.99", badge: "Chef's Pick", image: gulabJamunSkilletImg },
+      { name: "Everest Kulfi Pop", desc: "Frozen mango-cardamom kulfi with a pistachio crunch.", price: "$6.99", badge: "Most Popular", image: everestKulfiPopImg },
+      { name: "Rice Pudding", desc: "Slow-cooked basmati rice pudding with cardamom, saffron, and pistachio.", price: "$6.99", image: ricePuddingImg },
     ],
   },
 ];
@@ -245,22 +269,24 @@ export interface AddOn {
 
 export const addOns: { naan: AddOn[]; sides: AddOn[]; sauces: AddOn[] } = {
   naan: [
-    { name: "Plain Naan", price: "$3" },
-    { name: "Butter Naan", price: "$4" },
-    { name: "Garlic Naan", price: "$5" },
-    { name: "Chili Garlic Naan", price: "$6" },
-    { name: "Cheese Naan", price: "$7" },
-    { name: "Keema Naan", price: "$8" },
-    { name: "Naan Basket (Plain, Butter, Garlic & Chili-Garlic)", price: "$12" },
+    { name: "Plain Naan", price: "$3.49" },
+    { name: "Butter Naan", price: "$3.99" },
+    { name: "Garlic Naan", price: "$4.49" },
+    { name: "Cheese Naan", price: "$4.99" },
+    { name: "Chilli Cheese Naan", price: "$5.49" },
+    { name: "Kulcha (Aloo/Onion)", price: "$4.49" },
+    { name: "Lacha Paratha", price: "$4.49" },
+    { name: "Tandoori Roti", price: "$3.49" },
   ],
   sides: [
-    { name: "Masala Fries", price: "$7" },
-    { name: "Garlic Fries", price: "$8" },
-    { name: "Cucumber Salad", price: "$6" },
-    { name: "Plain Yogurt", price: "$5" },
-    { name: "Pickled Onions", price: "$4" },
-    { name: "Nepali Achar", price: "$4" },
-    { name: "Chutney Trio", price: "$6" },
+    { name: "Masala Fries", price: "$6.99" },
+    { name: "Cucumber Salad", price: "$5.99" },
+    { name: "Plain Yogurt", price: "$4.99" },
+    { name: "Pickled Onions", price: "$3.99" },
+    { name: "Nepali Achar", price: "$3.99" },
+    { name: "Chutney Trio", price: "$3.99" },
+    { name: "Extra Sauce", price: "$0.99" },
+    { name: "Extra Chips", price: "$19.99" },
   ],
   sauces: [
     { name: "Mint Chutney", price: "$2" },
@@ -269,6 +295,5 @@ export const addOns: { naan: AddOn[]; sides: AddOn[]; sauces: AddOn[] } = {
     { name: "Lemon-Garlic Sauce", price: "$2" },
     { name: "Tamarind Chutney", price: "$2" },
     { name: "Chili-Garlic Sauce", price: "$2" },
-    { name: "Extra Sauce", price: "$2" },
   ],
 };

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Menu, X, Phone, MapPin, Instagram, Facebook } from "lucide-react";
+import { Menu, X, MapPin, Instagram, Facebook } from "lucide-react";
 import { Logo } from "./Logo";
 import { cn } from "@/lib/utils";
 
@@ -9,7 +9,6 @@ const NAV = [
   { to: "/menu", label: "Menu" },
   { to: "/about", label: "About" },
   { to: "/gallery", label: "Gallery" },
-  { to: "/reservations", label: "Reservations" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -55,8 +54,7 @@ export function Header() {
       >
         <div className="container-x mx-auto max-w-7xl h-9 flex items-center justify-between text-cream/65 text-xs">
           <div className="flex items-center gap-6">
-            <span className="flex items-center gap-1.5"><Phone className="size-3" /> (303) 555-0142</span>
-            <span className="flex items-center gap-1.5"><MapPin className="size-3" /> 1247 Mountain Ridge Ave, Aurora, CO</span>
+            <span className="flex items-center gap-1.5"><MapPin className="size-3" /> 6301 Coastal Highway, Ocean City, MD</span>
           </div>
           <div className="flex items-center gap-4">
             <span className="font-stencil tracking-[0.25em] text-saffron/80 text-[10px]">Fire · Smoke · Hospitality</span>
@@ -92,9 +90,6 @@ export function Header() {
             );
           })}
         </nav>
-
-        <div className="hidden lg:flex items-center gap-3">
-        </div>
 
         <button
           onClick={() => setOpen((v) => !v)}

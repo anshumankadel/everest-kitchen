@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Calendar, Clock, Users, Phone, User, MapPin, CheckCircle2 } from "lucide-react";
+import { Calendar, Clock, Users, Phone, User, MapPin, Mail, CheckCircle2 } from "lucide-react";
 import patioImg from "@/assets/patio.jpg";
 
 export const Route = createFileRoute("/reservations")({
@@ -47,7 +47,7 @@ function Reservations() {
                 </div>
                 <h2 className="font-display text-3xl text-navy mb-3">You're on the list.</h2>
                 <p className="text-charcoal/70 max-w-md mx-auto">
-                  We'll text you a confirmation shortly. If anything changes, just give us a call at (303) 555-0142.
+                  We'll text you a confirmation shortly. If anything changes, just send us an email at hello@everestkitchen.co.
                 </p>
                 <Button variant="navy" size="lg" className="mt-8" onClick={() => setSubmitted(false)}>
                   Make another reservation
@@ -110,12 +110,12 @@ function Reservations() {
               <img src={patioImg} alt="Outdoor patio at dusk" width={1600} height={1200} loading="lazy" className="w-full h-64 object-cover" />
             </div>
             <div className="space-y-6">
-              <InfoRow icon={MapPin} title="Address" lines={["1247 Mountain Ridge Ave", "Aurora, CO 80012"]} />
-              <InfoRow icon={Phone} title="Call us" lines={["(303) 555-0142", "hello@everestkitchen.co"]} />
+              <InfoRow icon={MapPin} title="Address" lines={["6301 Coastal Highway", "Ocean City, MD"]} />
+              <InfoRow icon={Mail} title="Email us" lines={["hello@everestkitchen.co"]} />
               <InfoRow
                 icon={Clock}
                 title="Hours"
-                lines={["Mon – Thu · 4 – 10 PM", "Fri – Sat · 12 – 11:30 PM", "Sun · 12 – 9 PM"]}
+                lines={["Mon – Fri · 11 AM – 4 AM", "Sat · 11 AM – 4:30 AM", "Sun · 11 AM – 4 AM"]}
               />
             </div>
             <div className="bg-secondary rounded-2xl p-6 border border-border/40">

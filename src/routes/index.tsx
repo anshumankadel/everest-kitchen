@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Flame, Wheat, TreePine, Drumstick, ArrowRight, Star, MapPin, Phone, Clock, ChevronDown, ChevronLeft, ChevronRight, Mountain, ShoppingBag, Quote } from "lucide-react";
+import { Flame, Wheat, TreePine, Drumstick, ArrowRight, Star, MapPin, Clock, ChevronDown, ChevronLeft, ChevronRight, Mountain, ShoppingBag, Quote } from "lucide-react";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { MountainDivider } from "@/components/site/MountainDivider";
@@ -47,13 +47,13 @@ const TICKER = [
   "Tandoor-Fired Daily",
   "Hand-Stretched Naan",
   "Himalayan Sekuwa",
-  "Est. 2021 · Aurora, CO",
+  "Est. 2021 · Ocean City, MD",
   "Outdoor Patio Open",
   "Mountain-Inspired",
 ];
 
 const TESTIMONIALS = [
-  { quote: "The Aama's Platter is unreal. The patio at sunset feels like a tiny mountain getaway in the middle of the city.", name: "Priya R.", role: "Aurora, CO" },
+  { quote: "The Aama's Platter is unreal. The patio at sunset feels like a tiny mountain getaway in the middle of the city.", name: "Priya R.", role: "Ocean City, MD" },
   { quote: "Best tandoori chicken outside of Kathmandu — I'd argue better. The smoke, the char, the chutneys. Perfect.", name: "Marcus T.", role: "Food blogger" },
   { quote: "We came for one drink and ended up staying three hours. The staff treats you like family.", name: "Lena & Sam", role: "Regulars since 2022" },
 ];
@@ -146,19 +146,12 @@ function Home() {
               <span className="text-sunny">Always Memorable.</span>
             </h1>
             <p className="mt-7 text-cream/80 text-lg sm:text-xl max-w-xl leading-relaxed">
-              A modern tandoor &amp; BBQ kitchen with a patio built for long, lamp-lit
-              dinners under the open sky.
+              Halal Nepalese &amp; Indian fare, plus Chinese dishes like chow mein, from a late-night take-out window.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Button asChild variant="hero" size="lg">
-                <Link to="/menu"><ShoppingBag className="size-4" /> Order Online</Link>
+                <Link to="/menu">Check Out Menu</Link>
               </Button>
-            </div>
-            <div className="mt-6 flex items-center gap-2 text-cream/75 text-sm">
-              <div className="flex gap-0.5 text-sunny">
-                {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="size-4 fill-current" />)}
-              </div>
-              <span className="font-semibold text-cream">4.8</span> rated by 340+ Aurora diners
             </div>
           </div>
         </div>
@@ -170,7 +163,7 @@ function Home() {
               {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="size-3 fill-current" />)}
             </div>
             <div className="text-[9px] uppercase tracking-wide font-bold text-navy leading-tight px-2">
-              Aurora's Pick<br />2024
+              OC's Pick<br />2024
             </div>
           </div>
         </div>
@@ -556,17 +549,12 @@ function Home() {
             <div>
               <Clock className="size-5 text-chili mb-3" />
               <h3 className="font-stencil text-navy-deep text-sm mb-2">Hours</h3>
-              <p className="text-sm text-navy/70 leading-relaxed">Mon–Thu 4–10 PM<br />Fri–Sat 12–11:30 PM<br />Sun 12–9 PM</p>
+              <p className="text-sm text-navy/70 leading-relaxed">Mon–Fri 11 AM–4 AM<br />Sat 11 AM–4:30 AM<br />Sun 11 AM–4 AM</p>
             </div>
             <div>
               <MapPin className="size-5 text-chili mb-3" />
               <h3 className="font-stencil text-navy-deep text-sm mb-2">Visit</h3>
-              <p className="text-sm text-navy/70 leading-relaxed">1247 Mountain Ridge Ave<br />Aurora, CO 80012</p>
-            </div>
-            <div>
-              <Phone className="size-5 text-chili mb-3" />
-              <h3 className="font-stencil text-navy-deep text-sm mb-2">Call</h3>
-              <p className="text-sm text-navy/70 leading-relaxed">(303) 555-0142<br />hello@everestkitchen.co</p>
+              <p className="text-sm text-navy/70 leading-relaxed">6301 Coastal Highway<br />Ocean City, MD</p>
             </div>
           </Reveal>
         </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Instagram, Facebook, Twitter, MapPin, Phone, Mail, Clock, ArrowRight, Heart } from "lucide-react";
+import { Instagram, Facebook, Twitter, MapPin, Mail, Clock, ArrowRight, Heart } from "lucide-react";
 import { Logo } from "./Logo";
 import { MountainDivider } from "./MountainDivider";
 import { Input } from "@/components/ui/input";
@@ -84,7 +84,6 @@ export function Footer() {
               { to: "/menu", label: "Menu" },
               { to: "/about", label: "About" },
               { to: "/gallery", label: "Gallery" },
-              { to: "/reservations", label: "Reservations" },
               { to: "/contact", label: "Contact" },
             ].map((l) => (
               <li key={l.to}>
@@ -99,8 +98,7 @@ export function Footer() {
         <div>
           <h4 className="font-stencil text-cream text-sm mb-5">Visit</h4>
           <ul className="space-y-3 text-sm">
-            <li className="flex gap-3"><MapPin className="size-4 mt-0.5 text-saffron shrink-0" /> 1247 Mountain Ridge Ave, Aurora, CO 80012</li>
-            <li className="flex gap-3"><Phone className="size-4 mt-0.5 text-saffron shrink-0" /> (303) 555-0142</li>
+            <li className="flex gap-3"><MapPin className="size-4 mt-0.5 text-saffron shrink-0" /> 6301 Coastal Highway, Ocean City, MD</li>
             <li className="flex gap-3"><Mail className="size-4 mt-0.5 text-saffron shrink-0" /> hello@everestkitchen.co</li>
           </ul>
         </div>
@@ -111,9 +109,9 @@ export function Footer() {
             <li className="flex items-start gap-3">
               <Clock className="size-4 mt-0.5 text-saffron shrink-0" />
               <div>
-                <p>Mon – Thu · 4:00 PM – 10:00 PM</p>
-                <p>Fri – Sat · 12:00 PM – 11:30 PM</p>
-                <p>Sun · 12:00 PM – 9:00 PM</p>
+                <p>Mon – Fri · 11:00 AM – 4:00 AM</p>
+                <p>Sat · 11:00 AM – 4:30 AM</p>
+                <p>Sun · 11:00 AM – 4:00 AM</p>
               </div>
             </li>
           </ul>

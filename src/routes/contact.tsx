@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook, CheckCircle2 } from "lucide-react";
+import { MapPin, Mail, Clock, Instagram, Facebook, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -40,20 +40,17 @@ function Contact() {
         <div className="container-x mx-auto max-w-6xl grid gap-12 lg:grid-cols-2">
           <div className="space-y-6">
             <InfoCard icon={MapPin} title="Visit">
-              <p>1247 Mountain Ridge Ave</p>
-              <p>Aurora, CO 80012</p>
-            </InfoCard>
-            <InfoCard icon={Phone} title="Call">
-              <p>(303) 555-0142</p>
+              <p>6301 Coastal Highway</p>
+              <p>Ocean City, MD</p>
             </InfoCard>
             <InfoCard icon={Mail} title="Email">
               <p>hello@everestkitchen.co</p>
               <p className="text-charcoal/60">For press: press@everestkitchen.co</p>
             </InfoCard>
             <InfoCard icon={Clock} title="Hours">
-              <p>Mon – Thu · 4:00 PM – 10:00 PM</p>
-              <p>Fri – Sat · 12:00 PM – 11:30 PM</p>
-              <p>Sun · 12:00 PM – 9:00 PM</p>
+              <p>Mon – Fri · 11:00 AM – 4:00 AM</p>
+              <p>Sat · 11:00 AM – 4:30 AM</p>
+              <p>Sun · 11:00 AM – 4:00 AM</p>
             </InfoCard>
             <div className="flex gap-3 pt-2">
               {[Instagram, Facebook].map((Icon, i) => (
