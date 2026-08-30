@@ -58,14 +58,21 @@ const TESTIMONIALS = [
   { quote: "We came for one drink and ended up staying three hours. The staff treats you like family.", name: "Lena & Sam", role: "Regulars since 2022" },
 ];
 
+function findDish(categoryId: string, dishName: string) {
+  const category = menu.find((c) => c.id === categoryId);
+  const dish = category?.dishes.find((d) => d.name === dishName);
+  if (!dish) throw new Error(`Preview dish not found: ${categoryId}/${dishName}`);
+  return dish;
+}
+
 function Home() {
   const previewDishes = [
-    menu[0].dishes[0], // Tandoori Chicken BBQ
-    menu[1].dishes[0], // Aama's BBQ Platter
-    menu[0].dishes[3], // Malai
-    menu[0].dishes[6], // Tandoori Shrimp
-    menu[0].dishes[4], // Lamb Seekh
-    menu[2].dishes[0], // Tandoori Chicken Naan Wrap
+    findDish("grill-charcoal", "Chicken Sekuwa"),
+    findDish("platters", "Kathmandu Mixed Grill"),
+    findDish("grill-charcoal", "Malai Chicken Kebab"),
+    findDish("grill-charcoal", "Tandoori Shrimp"),
+    findDish("grill-charcoal", "Lamb Seekh Kebab"),
+    findDish("naan-wraps", "Tandoori Tikka Naan Wrap"),
   ];
   const [activeSpecial, setActiveSpecial] = useState(0);
   const specialTrackRef = useRef<HTMLDivElement>(null);

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { Flame, Utensils, Sandwich, Drumstick, Wheat, Soup, Sparkles } from "lucide-react";
+import { Flame, Utensils, Sandwich, Drumstick, Wheat, Soup, Sparkles, Leaf } from "lucide-react";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { MountainDivider } from "@/components/site/MountainDivider";
 import { Reveal } from "@/components/site/Reveal";
-import { menu, addOns, type MenuCategory, type AddOn } from "@/data/menu";
+import { menu, type MenuCategory } from "@/data/menu";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/menu")({
@@ -27,13 +27,14 @@ const ICONS: Record<string, typeof Flame> = {
   wheat: Wheat,
   soup: Soup,
   sparkles: Sparkles,
+  leaf: Leaf,
 };
 
 function MenuPage() {
   const [active, setActive] = useState<string>(menu[0].id);
 
   useEffect(() => {
-    const sections = [...menu.map((c) => c.id), "add-ons"];
+    const sections = menu.map((c) => c.id);
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries
@@ -90,15 +91,6 @@ function MenuPage() {
                 </a>
               );
             })}
-            <a
-              href="#add-ons"
-              className={cn(
-                "inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs uppercase tracking-wider font-semibold transition-colors whitespace-nowrap",
-                active === "add-ons" ? "bg-navy-deep text-cream shadow" : "text-navy/80 hover:bg-navy/10",
-              )}
-            >
-              <Sparkles className="size-3.5" /> Add-Ons
-            </a>
           </div>
         </div>
       </div>
@@ -108,25 +100,6 @@ function MenuPage() {
         {menu.map((cat) => (
           <Category key={cat.id} cat={cat} />
         ))}
-
-        {/* ADD ONS */}
-        <section id="add-ons" className="scroll-mt-40">
-          <Reveal as="header" className="mb-10">
-            <div className="flex items-center gap-3 mb-3">
-              <Sparkles className="size-5 text-sunny" />
-              <p className="font-stencil text-terracotta text-xs">Add-Ons</p>
-            </div>
-            <h2 className="font-display text-4xl sm:text-5xl text-navy">Naan, Sides &amp; Sauces</h2>
-            <p className="text-charcoal/70 mt-3 max-w-2xl">
-              Round out the table with hot bread, crispy fries, and the chutneys that make every bite better.
-            </p>
-          </Reveal>
-          <div className="grid gap-6 md:grid-cols-3">
-            <Reveal delay={0}><AddOnCard icon={Wheat} title="Naan" items={addOns.naan} /></Reveal>
-            <Reveal delay={120}><AddOnCard icon={Soup} title="Sides" items={addOns.sides} /></Reveal>
-            <Reveal delay={240}><AddOnCard icon={Sparkles} title="Sauces" items={addOns.sauces} /></Reveal>
-          </div>
-        </section>
       </div>
     </SiteLayout>
   );
@@ -170,7 +143,12 @@ function Category({ cat }: { cat: MenuCategory }) {
                   <span className="font-display text-cream font-bold text-lg shrink-0 bg-sunny px-2 py-0.5 rounded-full">{d.price}</span>
                 </div>
                 {d.badge && (
-                  <span className="inline-block mt-2 text-[9px] uppercase tracking-widest font-bold text-navy bg-sunny rounded-full px-2.5 py-0.5">
+                  <span
+                    className={cn(
+                      "inline-block mt-2 text-[9px] uppercase tracking-widest font-bold rounded-full px-2.5 py-0.5",
+                      d.badge === "Out of Stock" ? "text-cream bg-chili" : "text-navy bg-sunny",
+                    )}
+                  >
                     {d.badge}
                   </span>
                 )}
@@ -181,27 +159,5 @@ function Category({ cat }: { cat: MenuCategory }) {
         ))}
       </div>
     </section>
-  );
-}
-
-function AddOnCard({ icon: Icon, title, items }: { icon: typeof Flame; title: string; items: AddOn[] }) {
-  return (
-    <div className="group bg-card rounded-2xl p-7 shadow-card hover:shadow-warm transition-all duration-500 border border-border/50 hover:border-chili/40 hover:-translate-y-1">
-      <div className="flex items-center gap-3 mb-5">
-        <div className="size-10 rounded-full bg-sunny/20 grid place-items-center text-navy group-hover:bg-sunny group-hover:text-navy group-hover:rotate-6 transition-all duration-500">
-          <Icon className="size-4" />
-        </div>
-        <h3 className="font-display text-xl text-navy">{title}</h3>
-      </div>
-      <ul className="space-y-3">
-        {items.map((item) => (
-          <li key={item.name} className="flex items-baseline gap-2 text-sm text-charcoal/80 pb-2 border-b border-dashed border-border last:border-0">
-            <span>{item.name}</span>
-            <span className="flex-1 border-b border-dotted border-charcoal/25 translate-y-[-3px]" aria-hidden="true" />
-            <span className="font-display text-cream text-xs font-bold shrink-0 bg-sunny px-1.5 py-0.5 rounded">{item.price}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }
