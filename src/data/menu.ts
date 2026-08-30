@@ -65,6 +65,10 @@ import gulabJamunSkilletImg from "@/assets/Gulab Jamun Skillet.jpg";
 import everestKulfiPopImg from "@/assets/Everest Kulfi Pop.jpg";
 import ricePuddingImg from "@/assets/Rice Pudding.jpg";
 
+import gfCucumberSaladImg from "@/assets/GF cucumber salad.jpg";
+import gfPlainYogurtImg from "@/assets/GF Plain Yogurt.jpg";
+import gfNepaliAcharImg from "@/assets/GF Nepali Achar.jpg";
+
 export const dishImages = {
   tandooriChicken: dishTandooriChicken,
   bbqPlatter: dishBbqPlatter,
@@ -316,9 +320,9 @@ export const menu: MenuCategory[] = [
       { name: "GF Korma", desc: "A gentle, aromatic cashew-yogurt sauce with warm spices. (Served with 16 oz of basmati rice)", price: "$20.99", image: chickenKormaImg },
       { name: "GF Dal Makhani", desc: "Slow-simmered black lentils, kidney beans, tomato, butter, and warming spices. (Served with 16 oz of basmati rice)", price: "$17.99", image: dalMakhaniImg },
       { name: "GF Saag Curry", desc: "A creamy spinach-based curry with garlic, ginger, spices, and herbs. (Served with 16 oz of basmati rice)", price: "$20.99", image: saagCurryImg },
-      { name: "GF Cucumber Salad", desc: "Cooling cucumber, herbs, onion, and lemon.", price: "$5.99" },
-      { name: "GF Plain Yogurt", desc: "Cooling house yogurt, lightly seasoned.", price: "$4.99" },
-      { name: "GF Nepali Achar", desc: "Everest house pickle.", price: "$3.99" },
+      { name: "GF Cucumber Salad", desc: "Cooling cucumber, herbs, onion, and lemon.", price: "$5.99", image: gfCucumberSaladImg },
+      { name: "GF Plain Yogurt", desc: "Cooling house yogurt, lightly seasoned.", price: "$4.99", image: gfPlainYogurtImg },
+      { name: "GF Nepali Achar", desc: "Everest house pickle.", price: "$3.99", image: gfNepaliAcharImg },
       { name: "GF Ama's Masala Chai", desc: "Black tea simmered with cardamom, ginger, cinnamon, cloves, and milk.", price: "$4.99", image: aamasMasalaChaiImg },
       { name: "GF Himalayan Iced Chai", desc: "Cold-brewed spiced tea with milk, vanilla, cardamom, and cinnamon.", price: "$6.99", image: himalayanIcedChaiImg },
       { name: "GF Mango Lassi", desc: "Mango, yogurt, cardamom, and a touch of saffron.", price: "$6.99", image: mangoLassiImg },
