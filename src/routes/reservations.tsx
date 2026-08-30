@@ -111,6 +111,7 @@ function Reservations() {
             </div>
             <div className="space-y-6">
               <InfoRow icon={MapPin} title="Address" lines={["6301 Coastal Highway", "Ocean City, MD"]} />
+              <InfoRow icon={Phone} title="Call us" lines={["+1 443-944-4943"]} />
               <InfoRow icon={Mail} title="Email us" lines={["hello@everestkitchen.co"]} />
               <InfoRow
                 icon={Clock}
@@ -121,7 +122,11 @@ function Reservations() {
             <div className="bg-secondary rounded-2xl p-6 border border-border/40">
               <p className="font-stencil text-terracotta text-xs mb-2">Large groups</p>
               <p className="text-sm text-charcoal/75 leading-relaxed">
-                Booking for 8+? Call us directly so we can plan the table layout and a family-style spread.
+                Booking for 8+? Call us directly at{" "}
+                <a href="tel:+14439444943" className="font-semibold text-navy underline underline-offset-2">
+                  +1 443-944-4943
+                </a>{" "}
+                so we can plan the table layout and a family-style spread.
               </p>
             </div>
           </aside>

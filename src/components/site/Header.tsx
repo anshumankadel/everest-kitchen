@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Menu, X, MapPin, Instagram, Facebook } from "lucide-react";
+import { Menu, X, MapPin, Phone, Instagram, Facebook } from "lucide-react";
 import { Logo } from "./Logo";
 import { cn } from "@/lib/utils";
 
@@ -55,6 +55,9 @@ export function Header() {
         <div className="container-x mx-auto max-w-7xl h-9 flex items-center justify-between text-cream/65 text-xs">
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5"><MapPin className="size-3" /> 6301 Coastal Highway, Ocean City, MD</span>
+            <a href="tel:+14439444943" className="flex items-center gap-1.5 hover:text-saffron transition-colors">
+              <Phone className="size-3" /> +1 443-944-4943
+            </a>
           </div>
           <div className="flex items-center gap-4">
             <span className="font-stencil tracking-[0.25em] text-saffron/80 text-[10px]">Fire · Smoke · Hospitality</span>

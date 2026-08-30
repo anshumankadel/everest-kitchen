@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Instagram, Facebook, Twitter, MapPin, Mail, Clock, ArrowRight, Heart } from "lucide-react";
+import { Instagram, Facebook, Twitter, MapPin, Mail, Phone, Clock, ArrowRight, Heart } from "lucide-react";
 import { Logo } from "./Logo";
 import { MountainDivider } from "./MountainDivider";
 import { Input } from "@/components/ui/input";
@@ -99,6 +99,7 @@ export function Footer() {
           <h4 className="font-stencil text-cream text-sm mb-5">Visit</h4>
           <ul className="space-y-3 text-sm">
             <li className="flex gap-3"><MapPin className="size-4 mt-0.5 text-saffron shrink-0" /> 6301 Coastal Highway, Ocean City, MD</li>
+            <li className="flex gap-3"><Phone className="size-4 mt-0.5 text-saffron shrink-0" /> <a href="tel:+14439444943" className="hover:text-saffron transition-colors">+1 443-944-4943</a></li>
             <li className="flex gap-3"><Mail className="size-4 mt-0.5 text-saffron shrink-0" /> hello@everestkitchen.co</li>
           </ul>
         </div>

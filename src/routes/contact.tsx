@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Mail, Clock, Instagram, Facebook, CheckCircle2 } from "lucide-react";
+import { MapPin, Mail, Phone, Clock, Instagram, Facebook, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -42,6 +42,9 @@ function Contact() {
             <InfoCard icon={MapPin} title="Visit">
               <p>6301 Coastal Highway</p>
               <p>Ocean City, MD</p>
+            </InfoCard>
+            <InfoCard icon={Phone} title="Call">
+              <p><a href="tel:+14439444943" className="hover:text-saffron transition-colors">+1 443-944-4943</a></p>
             </InfoCard>
             <InfoCard icon={Mail} title="Email">
               <p>hello@everestkitchen.co</p>
