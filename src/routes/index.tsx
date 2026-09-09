@@ -12,6 +12,7 @@ import naanImg from "@/assets/naan.jpg";
 import chefImg from "@/assets/chef-tandoor.jpg";
 import logoMark from "@/assets/everest-kitchen-logo.jpeg";
 import familyBbqFeastImg from "@/assets/Everest Family Feast.jpg";
+import dishTandooriChickenImg from "@/assets/dish-tandoori-chicken.jpg";
 import everestImg from "@/assets/everest.jpg";
 import resteoImg from "@/assets/resteo.jpg";
 import restroOutsideImg from "@/assets/restro outside.jpg";
@@ -339,28 +340,53 @@ function Home() {
               The small things that make a real difference.
             </h2>
           </Reveal>
-          <Reveal className="relative rounded-3xl overflow-hidden shadow-warm aspect-[4/5] sm:aspect-[16/9]">
-            <img
-              src={familyBbqFeastImg}
-              alt="Everest Family Feast platter with grilled meats and sauce"
-              width={1600}
-              height={1000}
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-chili-deep/55 via-transparent to-chili-deep/10" />
+          <div className="grid grid-cols-2 gap-4 sm:gap-6">
+            <Reveal className="relative rounded-3xl overflow-hidden shadow-warm aspect-[4/5] sm:aspect-square">
+              <img
+                src={familyBbqFeastImg}
+                alt="Everest Family Feast platter with grilled meats and sauce"
+                width={1000}
+                height={1000}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-chili-deep/55 via-transparent to-chili-deep/10" />
 
-            {FEATURES.map((f, i) => (
-              <div key={f.title} className={cn("absolute wobble-in", f.pos)} style={{ animationDelay: `${i * 150}ms` }}>
-                <div className="flex items-center gap-2 bg-navy-deep rounded-full pl-1.5 pr-3.5 py-1.5 shadow-warm border border-sunny/30">
-                  <span className={cn("grid place-items-center size-7 sm:size-8 rounded-full shrink-0", ACCENT_CLASSES[f.accent])}>
-                    <f.icon className="size-3.5 sm:size-4" />
-                  </span>
-                  <span className="font-stencil text-[10px] sm:text-xs text-cream whitespace-nowrap">{f.title}</span>
+              {FEATURES.filter((f) => f.pos.includes("left")).map((f, i) => (
+                <div key={f.title} className={cn("absolute wobble-in", f.pos)} style={{ animationDelay: `${i * 150}ms` }}>
+                  <div className="flex items-center gap-2 bg-navy-deep rounded-full pl-1.5 pr-3.5 py-1.5 shadow-warm border border-sunny/30">
+                    <span className={cn("grid place-items-center size-7 sm:size-8 rounded-full shrink-0", ACCENT_CLASSES[f.accent])}>
+                      <f.icon className="size-3.5 sm:size-4" />
+                    </span>
+                    <span className="font-stencil text-[10px] sm:text-xs text-cream whitespace-nowrap">{f.title}</span>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Reveal>
+              ))}
+            </Reveal>
+
+            <Reveal delay={100} className="relative rounded-3xl overflow-hidden shadow-warm aspect-[4/5] sm:aspect-square">
+              <img
+                src={dishTandooriChickenImg}
+                alt="Tandoori chicken fresh off the grill"
+                width={1000}
+                height={1000}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-chili-deep/55 via-transparent to-chili-deep/10" />
+
+              {FEATURES.filter((f) => f.pos.includes("right")).map((f, i) => (
+                <div key={f.title} className={cn("absolute wobble-in", f.pos)} style={{ animationDelay: `${i * 150}ms` }}>
+                  <div className="flex items-center gap-2 bg-navy-deep rounded-full pl-1.5 pr-3.5 py-1.5 shadow-warm border border-sunny/30">
+                    <span className={cn("grid place-items-center size-7 sm:size-8 rounded-full shrink-0", ACCENT_CLASSES[f.accent])}>
+                      <f.icon className="size-3.5 sm:size-4" />
+                    </span>
+                    <span className="font-stencil text-[10px] sm:text-xs text-cream whitespace-nowrap">{f.title}</span>
+                  </div>
+                </div>
+              ))}
+            </Reveal>
+          </div>
         </div>
         <MountainDivider fill="sunny" className="absolute bottom-0 inset-x-0 z-10" />
       </section>
