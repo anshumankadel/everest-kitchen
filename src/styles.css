@@ -7,7 +7,7 @@
 /*
  * Everest Kitchen — Design System
  * Deep Navy, Cream, Saffron, Terracotta, Charcoal
- * Headings: Oswald (bold condensed), Body: Inter
+ * All text: Oswald (bold condensed)
  */
 
 @theme inline {
@@ -18,8 +18,8 @@
   --radius-2xl: calc(var(--radius) + 8px);
 
   --font-display: "Oswald", "Bebas Neue", sans-serif;
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-script: "Caveat", cursive;
+  --font-sans: "Oswald", "Bebas Neue", sans-serif;
+  --font-script: "Oswald", "Bebas Neue", sans-serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
