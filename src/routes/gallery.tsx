@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { MountainDivider } from "@/components/site/MountainDivider";
-import patioImg from "@/assets/patio.jpg";
-import patio2 from "@/assets/patio-2.jpg";
-import patio3 from "@/assets/patio-3.jpg";
+import everestImg from "@/assets/everest.jpg";
+import resteoImg from "@/assets/resteo.jpg";
+import restroOutsideImg from "@/assets/restro outside.jpg";
 import chefImg from "@/assets/chef-tandoor.jpg";
 import heroImg from "@/assets/hero-tandoor.jpg";
 import dish1 from "@/assets/dish-tandoori-chicken.jpg";
@@ -26,14 +26,14 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const items: { src: string; alt: string; aspect: string }[] = [
-  { src: patioImg, alt: "Outdoor patio at dusk", aspect: "aspect-[4/3]" },
+  { src: restroOutsideImg, alt: "Outdoor patio seating", aspect: "aspect-[4/3]" },
   { src: chefImg, alt: "Chef at the tandoor", aspect: "aspect-[3/4]" },
   { src: dish1, alt: "Tandoori chicken", aspect: "aspect-square" },
-  { src: patio2, alt: "Friends dining outdoors", aspect: "aspect-[3/4]" },
+  { src: everestImg, alt: "Everest Kitchen storefront at night", aspect: "aspect-[3/4]" },
   { src: dish3, alt: "Malai chicken kabab", aspect: "aspect-square" },
   { src: heroImg, alt: "Tandoor with flames", aspect: "aspect-[4/3]" },
   { src: dish4, alt: "Tandoori shrimp", aspect: "aspect-square" },
-  { src: patio3, alt: "Outdoor table spread", aspect: "aspect-[4/3]" },
+  { src: resteoImg, alt: "Covered porch dining area", aspect: "aspect-[3/4]" },
   { src: dish5, alt: "Lamb seekh kabab", aspect: "aspect-square" },
   { src: naan, alt: "Fresh garlic naan", aspect: "aspect-square" },
   { src: dish6, alt: "Tandoori naan wrap", aspect: "aspect-[3/4]" },
