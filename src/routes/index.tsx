@@ -11,7 +11,7 @@ import heroImg from "@/assets/hero-tandoor.jpg";
 import naanImg from "@/assets/naan.jpg";
 import chefImg from "@/assets/chef-tandoor.jpg";
 import logoMark from "@/assets/everest-kitchen-logo.jpeg";
-import familyBbqFeastImg from "@/assets/family-bbq-feast.jpg";
+import familyBbqFeastImg from "@/assets/Everest Family Feast.jpg";
 import everestImg from "@/assets/everest.jpg";
 import resteoImg from "@/assets/resteo.jpg";
 import restroOutsideImg from "@/assets/restro outside.jpg";
@@ -339,7 +339,7 @@ function Home() {
           <Reveal className="relative rounded-3xl overflow-hidden shadow-warm aspect-[4/5] sm:aspect-[16/9]">
             <img
               src={familyBbqFeastImg}
-              alt="Family BBQ feast spread across the table"
+              alt="Everest Family Feast platter with grilled meats and sauce"
               width={1600}
               height={1000}
               loading="lazy"

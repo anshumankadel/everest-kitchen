@@ -9,7 +9,7 @@ import chickenSekuwaImg from "@/assets/chicken-sekuwa.jpg";
 import chickenTikkaKababImg from "@/assets/chicken-tikka-kabab.jpg";
 import tandooriFishTikkaImg from "@/assets/tandoori-fish-tikka.jpg";
 import mixedGrillComboImg from "@/assets/mixed-grill-combo.jpg";
-import familyBbqFeastImg from "@/assets/family-bbq-feast.jpg";
+import familyBbqFeastImg from "@/assets/Everest Family Feast.jpg";
 import sekuwaNaanBoardImg from "@/assets/sekuwa-naan-board.jpg";
 import lambSeekhNaanWrapImg from "@/assets/lamb-seekh-naan-wrap.jpg";
 import tandooriShrimpNaanWrapImg from "@/assets/tandoori-shrimp-naan-wrap.jpg";
