@@ -8,13 +8,13 @@ import { Reveal } from "@/components/site/Reveal";
 import { cn } from "@/lib/utils";
 import { menu } from "@/data/menu";
 import heroImg from "@/assets/hero-tandoor.jpg";
-import patioImg from "@/assets/patio.jpg";
-import patio3 from "@/assets/patio-3.jpg";
 import naanImg from "@/assets/naan.jpg";
 import chefImg from "@/assets/chef-tandoor.jpg";
 import logoMark from "@/assets/everest-kitchen-logo.jpeg";
-import patio2Img from "@/assets/patio-2.jpg";
 import familyBbqFeastImg from "@/assets/family-bbq-feast.jpg";
+import everestImg from "@/assets/everest.jpg";
+import resteoImg from "@/assets/resteo.jpg";
+import restroOutsideImg from "@/assets/restro outside.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -382,10 +382,10 @@ function Home() {
 
           <div className="flex flex-wrap justify-center items-start gap-x-2 gap-y-10 sm:gap-x-0 lg:-space-x-8 pt-4">
             {[
-              { img: patioImg, alt: "Outdoor patio with string lights at dusk", caption: "string lights & greenery", rotate: "-rotate-3", lift: "" },
+              { img: everestImg, alt: "Everest Kitchen storefront at night", caption: "Everest Kitchen, after dark", rotate: "-rotate-3", lift: "" },
               { img: naanImg, alt: "Fresh garlic naan, hand-stretched and baked to order", caption: "hand-stretched, daily", rotate: "rotate-2", lift: "sm:-translate-y-5 sm:z-10" },
-              { img: patio3, alt: "Patio table with tandoori spread and lassi", caption: "family-style spread", rotate: "-rotate-2", lift: "" },
-              { img: patio2Img, alt: "Patio seating at golden hour", caption: "golden hour, every night", rotate: "rotate-3", lift: "sm:-translate-y-3" },
+              { img: resteoImg, alt: "Covered porch dining area", caption: "our covered porch", rotate: "-rotate-2", lift: "" },
+              { img: restroOutsideImg, alt: "Outdoor patio seating at dusk", caption: "patio, dusk to close", rotate: "rotate-3", lift: "sm:-translate-y-3" },
             ].map((tile, i) => (
               <Reveal
                 key={tile.caption}
@@ -538,7 +538,7 @@ function Home() {
       {/* RESERVATION BAND */}
       <section className="relative overflow-hidden bg-sunny">
         <div className="absolute inset-0 opacity-15">
-          <img src={patioImg} alt="" width={1600} height={1200} loading="lazy" className="w-full h-full object-cover" />
+          <img src={restroOutsideImg} alt="" width={1600} height={1200} loading="lazy" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-sunny/90 via-marigold/70 to-sunny/80" />
         <div className="relative container-x mx-auto max-w-7xl py-20 grid gap-10 lg:grid-cols-2 lg:items-center">
