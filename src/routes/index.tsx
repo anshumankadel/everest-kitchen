@@ -15,6 +15,9 @@ import familyBbqFeastImg from "@/assets/Everest Family Feast.jpg";
 import everestImg from "@/assets/everest.jpg";
 import resteoImg from "@/assets/resteo.jpg";
 import restroOutsideImg from "@/assets/restro outside.jpg";
+import kioskImg from "@/assets/IMG_5972.jpg";
+import porchDayImg from "@/assets/IMG_5973.jpg";
+import picnicImg from "@/assets/IMG_5974.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -402,6 +405,40 @@ function Home() {
                   <img src={tile.img} alt={tile.alt} width={600} height={750} loading="lazy" className="w-full aspect-[4/5] object-cover" />
                 </div>
                 <p className="font-script text-xl text-charcoal text-center pt-3">{tile.caption}</p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AROUND THE RESTAURANT */}
+      <section className="section relative">
+        <div className="container-x mx-auto max-w-7xl">
+          <Reveal className="max-w-2xl mb-12">
+            <p className="font-stencil text-terracotta text-xs mb-4 flex items-center gap-3">
+              <span className="h-px w-8 bg-terracotta" /> Around the Restaurant
+            </p>
+            <h2 className="text-4xl sm:text-5xl text-navy text-balance leading-tight">
+              A closer look inside &amp; out.
+            </h2>
+          </Reveal>
+
+          <div className="grid gap-6 sm:grid-cols-3">
+            {[
+              { img: kioskImg, alt: "Self-order kiosk inside Everest Kitchen", caption: "order at the kiosk" },
+              { img: porchDayImg, alt: "Covered porch dining by day", caption: "the porch, by daylight" },
+              { img: picnicImg, alt: "Outdoor picnic seating", caption: "picnic seating outside" },
+            ].map((tile, i) => (
+              <Reveal key={tile.caption} delay={i * 100} className="rounded-2xl overflow-hidden shadow-card group">
+                <img
+                  src={tile.img}
+                  alt={tile.alt}
+                  width={900}
+                  height={1200}
+                  loading="lazy"
+                  className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <p className="bg-cream text-charcoal/80 text-sm text-center py-3">{tile.caption}</p>
               </Reveal>
             ))}
           </div>

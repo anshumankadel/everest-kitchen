@@ -12,6 +12,9 @@ import dish4 from "@/assets/dish-tandoori-shrimp.jpg";
 import dish5 from "@/assets/dish-lamb-seekh.jpg";
 import dish6 from "@/assets/dish-naan-wrap.jpg";
 import naan from "@/assets/naan.jpg";
+import kioskImg from "@/assets/IMG_5972.jpg";
+import porchDayImg from "@/assets/IMG_5973.jpg";
+import picnicImg from "@/assets/IMG_5974.jpg";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -37,6 +40,9 @@ const items: { src: string; alt: string; aspect: string }[] = [
   { src: dish5, alt: "Lamb seekh kabab", aspect: "aspect-square" },
   { src: naan, alt: "Fresh garlic naan", aspect: "aspect-square" },
   { src: dish6, alt: "Tandoori naan wrap", aspect: "aspect-[3/4]" },
+  { src: kioskImg, alt: "Self-order kiosk inside Everest Kitchen", aspect: "aspect-[3/4]" },
+  { src: porchDayImg, alt: "Covered porch dining by day", aspect: "aspect-[3/4]" },
+  { src: picnicImg, alt: "Outdoor picnic seating", aspect: "aspect-[4/3]" },
 ];
 
 function Gallery() {
