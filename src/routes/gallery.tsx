@@ -26,14 +26,14 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const items: { src: string; alt: string; aspect: string }[] = [
+  { src: everestImg, alt: "Everest Kitchen storefront at night", aspect: "aspect-[3/4]" },
   { src: restroOutsideImg, alt: "Outdoor patio seating", aspect: "aspect-[4/3]" },
+  { src: resteoImg, alt: "Covered porch dining area", aspect: "aspect-[3/4]" },
   { src: chefImg, alt: "Chef at the tandoor", aspect: "aspect-[3/4]" },
   { src: dish1, alt: "Tandoori chicken", aspect: "aspect-square" },
-  { src: everestImg, alt: "Everest Kitchen storefront at night", aspect: "aspect-[3/4]" },
   { src: dish3, alt: "Malai chicken kabab", aspect: "aspect-square" },
   { src: heroImg, alt: "Tandoor with flames", aspect: "aspect-[4/3]" },
   { src: dish4, alt: "Tandoori shrimp", aspect: "aspect-square" },
-  { src: resteoImg, alt: "Covered porch dining area", aspect: "aspect-[3/4]" },
   { src: dish5, alt: "Lamb seekh kabab", aspect: "aspect-square" },
   { src: naan, alt: "Fresh garlic naan", aspect: "aspect-square" },
   { src: dish6, alt: "Tandoori naan wrap", aspect: "aspect-[3/4]" },
