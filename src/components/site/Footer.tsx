@@ -5,14 +5,13 @@ import { Logo } from "./Logo";
 import { MountainDivider } from "./MountainDivider";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import igBbq from "@/assets/dish-bbq-platter.jpg";
 import igPatio from "@/assets/patio.jpg";
 import igSekuwa from "@/assets/chicken-sekuwa.jpg";
 import igShrimp from "@/assets/dish-tandoori-shrimp.jpg";
 import igPatio2 from "@/assets/patio-3.jpg";
 import igWrap from "@/assets/dish-naan-wrap.jpg";
 
-const IG_GRID = [igBbq, igPatio, igSekuwa, igShrimp, igPatio2, igWrap];
+const IG_GRID = [igPatio, igSekuwa, igShrimp, igPatio2, igWrap];
 
 export function Footer() {
   const [subscribed, setSubscribed] = useState(false);

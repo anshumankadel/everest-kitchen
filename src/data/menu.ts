@@ -1,6 +1,5 @@
 // ── existing kebab-case assets ──────────────────────────────────────────────
 import dishTandooriChicken from "@/assets/dish-tandoori-chicken.jpg";
-import dishBbqPlatter from "@/assets/dish-bbq-platter.jpg";
 import dishMalaiKabab from "@/assets/dish-malai-kabab.jpg";
 import dishTandooriShrimp from "@/assets/dish-tandoori-shrimp.jpg";
 import dishLambSeekh from "@/assets/dish-lamb-seekh.jpg";
@@ -71,7 +70,6 @@ import gfNepaliAcharImg from "@/assets/GF Nepali Achar.jpg";
 
 export const dishImages = {
   tandooriChicken: dishTandooriChicken,
-  bbqPlatter: dishBbqPlatter,
   malaiKabab: dishMalaiKabab,
   tandooriShrimp: dishTandooriShrimp,
   lambSeekh: dishLambSeekh,

@@ -7,7 +7,6 @@ import patio3 from "@/assets/patio-3.jpg";
 import chefImg from "@/assets/chef-tandoor.jpg";
 import heroImg from "@/assets/hero-tandoor.jpg";
 import dish1 from "@/assets/dish-tandoori-chicken.jpg";
-import dish2 from "@/assets/dish-bbq-platter.jpg";
 import dish3 from "@/assets/dish-malai-kabab.jpg";
 import dish4 from "@/assets/dish-tandoori-shrimp.jpg";
 import dish5 from "@/assets/dish-lamb-seekh.jpg";
@@ -28,7 +27,6 @@ export const Route = createFileRoute("/gallery")({
 
 const items: { src: string; alt: string; aspect: string }[] = [
   { src: patioImg, alt: "Outdoor patio at dusk", aspect: "aspect-[4/3]" },
-  { src: dish2, alt: "BBQ platter", aspect: "aspect-square" },
   { src: chefImg, alt: "Chef at the tandoor", aspect: "aspect-[3/4]" },
   { src: dish1, alt: "Tandoori chicken", aspect: "aspect-square" },
   { src: patio2, alt: "Friends dining outdoors", aspect: "aspect-[3/4]" },
